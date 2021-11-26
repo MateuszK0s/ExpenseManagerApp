@@ -4,7 +4,6 @@ import "./Expenses.css";
 
 const Expenses = (props) => {
   const { items } = props;
-
   const printExpanses = items.map((expense) => {
     return <ExpenseItem key={expense.id} expense={expense} />;
   });
