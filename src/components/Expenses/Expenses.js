@@ -25,7 +25,8 @@ const Expenses = (props) => {
         selected={filteredYear}
         onChangeFilter={filterChangeHandler}
       />
-      {printExpenses}
+      {filteredExpanses.length === 0 && <p>No expenses found</p>}
+      {filteredExpanses.length > 0 && printExpenses}
     </Card>
   );
 };
